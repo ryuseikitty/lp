@@ -1,5 +1,1034 @@
 @charset "UTF-8";
 
+.header img{
+    width: 100vw;
+    background-size:cover;
+    position:relative;
+}
+.hd-logo{
+    position: absolute;
+    top:100%;
+    transform: translate(0,-100%)
+}
+.hd-logo img{
+    width:320px;
+    margin-left: 10px;
+}
+@media screen and (min-width:768px){
+    .hd-logo img{
+        width:320px;
+        margin-left: 60px;
+    }
+}
+.hd-icon{
+    display: flex;
+}
+.hd-icon img{
+    width:30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 35px;
+}
+.hd-icon{
+    position: absolute;
+    top:100%;
+    left:100%;
+    transform: translate(-100%,0)
+}
+@media screen and (min-width:768px){
+    .hd-icon{
+        position: absolute;
+        top:100%;
+        left:100%;
+        transform: translate(-100%,-100%)
+    }
+    .hd-icon img{
+        width:30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+.globalnav {
+    position: relative;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.globalnav li {
+display: table-cell;
+text-align: center;
+}
+
+.globalnav li a {
+    display: block;
+    padding: 15px 0;
+}
+
+.news-info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.news-wrap {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left:12px;
+}
+.news-logo{
+    margin-top:150px;
+    margin-bottom: 55px;
+    margin-left:75px;
+}
+.news-logo img{
+    width:103px;
+}  
+.news-icon{
+    width:200px;
+    position: absolute;
+    left:100%;
+    transform: translate(-230px,0);
+    margin-top:150px;
+    margin-right:90px;
+    background:transparent;
+    border:none;
+    outline: none;
+    box-shadow: none;
+}
+.news-icon img{
+    width:23px;
+    transform: translate(0,5px);
+    margin-right: 5px;
+}
+.news-icon-small{
+    display:none;
+}
+.news-article{
+    max-width:260px;
+    min-width:100px;
+    width:50%;
+    padding-bottom: 30px;
+    margin-left: 60px;
+    border-bottom: 1px solid #000;
+    line-height: 2;
+}
+.news-article img {
+    max-width: 255px;
+}
+.news-title {
+    font-size: 20px;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS　明朝", serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.news-sentence{
+    font-size: 0.9rem;
+}
+.news-date{
+    display: flex;
+    margin-left: 12px;
+}
+.news-date-number{
+    margin-top: 10px;
+    max-width:260px;
+    min-width:100px;
+    width:50%;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    font-size: 0.8rem;
+}
+@media screen and (max-width:768px){
+    .news-logo{
+        margin-left: 20px;
+    }
+    .news-info{
+        display: block;
+    }
+    .news-icon{
+        display: none;
+    }
+    .news-icon-small{
+        display: block;
+        margin-left: 15%;
+        width:70%;
+        height: 40px;
+        margin-top: 30px;
+        margin-bottom: 180px;
+        background:transparent;
+        border:1px solid #000;
+        outline: none;
+        box-shadow: none;
+        text-align:center;
+    }    
+    .news-icon-small img{
+        text-align:center;
+    }
+    .news-article{
+        max-width: 310px;   
+        margin-left: 0px;
+        min-width:60px;
+        box-sizing: border-box;
+    }
+    .news-article img {
+        max-width: 100%;
+    }
+    .news-sentence{
+        font-size:0.75rem;
+    }
+    .news-date{
+        margin-left: 12px;
+    }
+    .news-date-number{
+        margin-top: 10px;
+        max-width:310px;
+        min-width:60px;
+        margin-left: 0px;
+    }    
+}
+.concept{
+    font-size: 19.5px;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS　明朝", serif;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.about{
+    margin-left: 130px;
+    margin-right: 130px;
+    line-height: 2;
+}
+.about-tea{
+    display: flex;
+}
+.about-tea-title{
+    width:20%;
+    box-sizing: border-box;
+}
+.about-tempting{
+    display:flex;
+}
+.about-sentences{
+    width:80%;
+    box-sizing: border-box;
+    font-size: 1.13rem;
+}
+.about-sentence{
+    margin-bottom: 30px;
+}
+.about-tempting-title{
+    width:20%;
+    box-sizing: border-box;
+}
+@media screen and (max-width:768px){
+    .concept{
+        font-size: 0.85rem;
+    }
+    .about{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .about-tempting{
+        display:block;
+    }
+    .about-sentences{
+        width:100%;
+        font-size: 0.73rem;
+    }
+    .about-tea{
+        display: block;
+    }
+}
+.product{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 250px;
+}
+.product-tea{
+    position:relative;
+    display:flex;
+    z-index:1;
+}
+.product-ceylontea-img{
+    position: absolute;
+    top:320px;
+    width: 180px;
+    z-index:2;
+    margin-left: -8px;
+}
+.product-tea-info{
+    position:absolute;
+    width:40%;
+    background-color:#fff;
+    padding:70px 55px;
+    right:5%;
+    top:50%;
+    transform: translate(0,-50%);
+    line-height: 1.9;
+}
+.product-tea-img{
+    display: block;
+    margin-left: 0px;
+    width:70%;
+    height:600px;
+    object-fit: cover;
+}
+.product-tea-img img{
+    max-width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-scone-logo-img{
+    position: absolute;
+    transform: translate(0px,50px);
+    width: 120px;
+    z-index:2;
+    margin-right: 0;
+    margin-left: auto;
+    right: 0;
+}
+.product-scone{
+    position:relative;
+    display:flex;
+    margin-top: 70px;
+}
+.product-scone-img{
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+    left: 0px;
+    width:70%;
+    height:600px;
+    right:0;
+    object-fit: cover;
+    z-index:1
+}
+.product-scone-info{
+    position:absolute;
+    width:40%;
+    background-color:#fff;
+    padding:70px 55px;
+    left:5%;
+    top:50%;
+    transform: translate(0,-50%);
+    line-height: 1.9;
+    z-index:3;
+}
+.product-scone-img img{
+    max-width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-title{
+    font-size: 2rem;
+}
+.product-sentence{
+    margin-top: 30px;
+}
+@media screen and (max-width:768px){
+    .product{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 170px;
+    }
+    .product-tea{
+        display:block;
+        margin-bottom: 100px;
+    }
+    .product-ceylontea-img{
+        top:180px;
+        width: 180px;
+        margin-left: 0px;
+    }    
+    .product-tea-info{
+        position:relative;
+        width:100%;
+        line-height: 1.9;
+        margin-top: 20px;
+        padding:0px;
+        right:0%;
+        transform: translate(0,0);
+        }
+    .product-tea-img{
+        position: relative;
+        width:100%;
+        height:700px;
+        object-fit: none;
+    }
+    .product-tea-img img{
+        max-width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .product-sentence{
+        font-size:0.8rem
+    }
+    .product-scone{
+        display:block;
+        margin-bottom: 100px;
+    }
+    .product-scone-logo-img{
+        transform: translate(0px,20px);
+    }    
+    .product-scone-img{
+        position: relative;
+        width:100%;
+        height:700px;
+        object-fit: none;
+    }
+    .product-scone-img img{
+        max-width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .product-scone-info{
+        position:relative;
+        width:100%;
+        line-height: 1.9;
+        margin-top: 20px;
+        padding:0px;
+        left:0%;
+        transform: translate(0,0);
+        }
+    .product-title{
+        font-size: 1.3rem;
+    }
+}    
+.feature-title{
+    font-size: 2rem;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS　明朝", serif;
+    font-weight: bold;
+    text-align:center;
+}
+.feature{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 130px;
+    padding-right: 140px;
+    padding-top: 250px;
+}
+.feature-tea{
+    display:flex;
+    position:relative;
+    margin-top:100px;
+}
+.feature-tea-info{
+    position:relative;
+    width:30%;
+    margin-top:35px;
+    margin-left:45px;
+    line-height: 1.6;
+}
+.feature-tea-title{
+    width: 100%;
+    font-size: 1.7rem;
+}
+.feature-tea-img{
+    display: block;
+    margin-left: 0px;
+    width:70%;
+    height:auto;
+    object-fit: cover;
+}
+.feature-tea-img img{
+    max-width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature-sentence{
+    margin-top: 20px;
+}
+.feature-sweat{
+    display:flex;
+    position:relative;
+    margin-top:100px;
+}
+.feature-sweat-info{
+    position:relative;
+    width:30%;
+    margin-top:35px;
+    margin-right:45px;
+    line-height: 1.6;
+}
+.feature-sweat-title{
+    font-size: 1.7rem;
+}
+.feature-sweat-img-small{
+    display:none;
+}
+.feature-sweat-img-big{
+    display: block;
+    margin-left: 0px;
+    width:70%;
+    height:auto;
+    object-fit: cover;
+}
+.feature-sweat-img-big img{
+    max-width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature-sweat-img-small img{
+    max-width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width:768px){
+    .feature{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 100px;
+    }
+    .feature-title{
+        font-size: 1rem;
+    }
+    .feature-tea{
+        width:100%;
+        display:block;
+        position:relative;
+        margin-top:50px;
+    }
+    .feature-tea-info{
+        position:relative;
+        width:100%;
+        margin-top:35px;
+        margin-left: 0px;
+        padding-left:0px;
+        padding-right:0px;
+        line-height: 1.6;
+    }
+    .feature-tea-title{
+        font-size: 1.1rem;
+    }
+    .feature-tea-img{
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+        width:100%;
+        height: auto;
+    }
+    .feature-sentence{
+        font-size: 0.8rem;
+    }
+    .feature-sweat{
+        width:100%;
+        display:block;
+        position:relative;
+        margin-top:50px;
+    }
+    .feature-sweat-info{
+        position:relative;
+        width:100%;
+        margin-top:35px;
+        margin-left: 0px;
+        padding-left:0px;
+        padding-right:0px;
+        line-height: 1.6;
+    }
+    .feature-sweat-title{
+        font-size: 1.1rem;
+    }
+    .feature-sweat-img-big{
+        display:none;
+    }
+    .feature-sweat-img-small{
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+        width:100%;
+        height: auto;
+    }
+}    
+
+.recipe{
+    position: relative;
+    margin-top:250px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.recipe-title{
+    position:relative;
+    text-align:center;
+}
+.recipe-title-img{
+    text-align:center;
+    width:100%;
+}
+.recipe-title-img img{
+    width:130px;
+}
+.recipe-title-sentences-big{
+    margin-top:30px ;
+    text-align:center;
+    font-size: 2.2rem;
+}
+.recipe-title-sentences{
+    display:none;
+}
+.recipe-info{
+    display: flex;
+}
+.recipe-info-title{
+    width: 90px;
+    margin-top: 100px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    border-top: 6.5px solid #000;
+}
+.recipe-info-title-sentence{
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.recipe-info-title-sentence-big{
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+.recipe-info-detail{
+    margin-left: 25px;
+    margin-top:120px;
+    overflow-x: scroll;
+    display: flex;
+}
+.recipe-cookie{
+    padding-left: 35px;
+    width:395px;
+}
+.recipe-cookie-img{
+    width: 350px;
+    height:350px;
+}
+.recipe-cookie-img img{
+    height:100%;
+}
+.recipe-ice{
+    margin-left:45px ;
+    width:350px;
+}
+.recipe-ice-img{
+    height:350px;
+}
+.recipe-ice-img img{
+    height:100%;
+}
+.recipe-tea{
+    margin-left:45px ;
+    width:350px;
+}
+.recipe-tea-img{
+    height:350px;
+}
+.recipe-tea-img img{
+    height:100%;
+}
+.recipe-pig{
+    margin-left:45px ;
+    width:350px;
+}
+.recipe-pig-img{
+    height:350px;
+}
+.recipe-pig-img img{
+    height:100%;
+}
+.recipe-detail-title{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+.recipe-detail-sentence{
+    width:340px;
+    font-size: 0.9rem;
+    line-height: 2;
+}
+@media screen and (max-width:768px){
+    .recipe{
+        margin-top:120px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .recipe-title{
+        position:relative;
+        text-align:center;
+    }
+    .recipe-title-img{
+        text-align:center;
+        width:100%;
+    }
+    .recipe-title-img img{
+        width:130px;
+    }
+    .recipe-title-sentences{
+        display:block;
+        text-align:center;
+        font-size: 1.2rem;
+    }
+    .recipe-title-sentences-big{
+        display:none;
+    }
+    .recipe-info{
+        display: flex;
+    }
+    .recipe-info-title{
+        width: 120px;
+        margin-top: 100px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        border-top: 1.5px solid #000;
+    }
+    .recipe-info-title-sentence{
+        margin-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1rem;
+    }
+    .recipe-info-title-sentence-big{
+        font-size: 1.8rem;
+        margin-top: 15px;
+    }
+    .recipe-info-detail{
+        margin-left: 20px;
+        margin-top:120px;
+        overflow-x: scroll;
+        display: flex;
+    }
+    .recipe-cookie{
+        padding-left: 0px;
+        margin-left: 25px;
+        width:60%;
+    }
+    .recipe-cookie-img{
+        width: 100%;
+        height:auto;
+    }
+    .recipe-cookie-img img{
+        width: 100%;
+        height:auto;
+    }
+    .recipe-ice{
+        margin-left:45px ;
+        width:60%;
+    }
+    .recipe-ice-img{
+        width: 100%;
+        height:auto;
+    }
+    .recipe-ice-img img{
+        width: 100%;
+        height:auto;
+    }
+    .recipe-tea{
+        margin-left:45px ;
+        width:60%;
+    }
+    .recipe-tea-img{
+        width: 100%;
+        height:auto;
+    }
+    .recipe-tea-img img{
+        width: 100%;
+        height:auto;
+    }
+    .recipe-pig{
+        margin-left:45px ;
+        width:60%;
+    }
+    .recipe-pig-img{
+        width: 100%;
+        height:auto;
+    }
+    .recipe-pig-img img{
+        width: 100%;
+        height:auto;
+    }
+    .recipe-detail-title{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+    .recipe-detail-sentence{
+        max-width:100%;
+        font-size: 0.7rem;
+        line-height: 2;
+    }    
+}
+
+.shop{
+    position: relative;
+    margin-top:150px;
+    margin-right: 70px;
+}
+.shop-title{
+    text-align: center;
+}
+.shop-title img{
+    width:350px;
+}
+.shop-info{
+    display:flex;
+    position:relative;
+    margin-top:60px;
+    padding-bottom: 60px;
+    border-bottom: 3.5px solid #000;
+}
+.shop-info-img-big{
+    position: relative;
+    margin-right: 50px;
+    width:60%;
+}
+.shop-info-img-small{
+    display:none;
+}
+.shop-info-img-big img{
+    max-width:100%;
+}
+.shop-info-cafe{
+    position: relative;
+    width:350px;
+    margin-left: 30px;
+    line-height: 1.5;
+}
+.shop-info-cafe-img{
+    width:80px;
+}
+.shop-info-cafe-img img{
+    max-width:100%; 
+}
+.shop-info-cafe-sentence{
+    line-height: 1.8;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+.shop-info-cafe-access{
+    position: relative;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.shop-info-btn{
+    margin-top: 20px;
+}
+.shop-inst-btn{
+    width:320px;
+    height:70px;
+    color:#000;
+    background-color: #fff;
+}
+.shop-inst-btn:hover{
+    background-color:#999;
+}
+.shop-online{
+    display:flex;
+}
+.shop-online-info{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.shop-online-img{
+    width: 120px;
+}
+.shop-online-sentence{
+    margin-top: 30px;
+    line-height: 2;
+}
+.shop-online-btn{
+    margin-top: 90px;
+    margin-left:auto;
+    margin-right: 70px;
+}
+.open-btn{
+    width:320px;
+    height:70px;
+    color:#000;
+    background-color: #fff;
+    background: url"index.html"
+}
+.open-btn:hover{
+    background-color:#999;
+}
+@media screen and (max-width:768px){
+    .shop{
+        margin-right: 0;
+    }
+    .shop-info{
+        display:block;
+    }
+    .shop-info-img-big{
+        display:none;
+    }
+    .shop-info-img-small{
+        display: block;
+        position: relative;
+        margin-right: 0px;
+        width:100%;
+    }
+    .shop-info-img-small img{
+        width:100%;
+    }
+    .shop-info-cafe{
+        position: relative;
+        width:100%;
+        margin-top: 40px;
+        margin-left: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 1.5;
+    }    
+    .shop-info-btn{
+        text-align: center;
+    }    
+    .shop-inst-btn{
+        width:400px;
+        height:50px;
+    }    
+    .shop-online{
+        display:block;
+    }    
+    .shop-online-btn{
+        text-align: center;
+        margin-top: 10px;
+    }    
+    .open-btn{
+        width:400px;
+        height:50px;
+    }    
+}
+.contact{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.contact-title{
+    text-align: center;
+}
+.contact-title img{
+    width:180px;
+    text-align: center;
+}
+.contact-form-name{
+    display:flex;
+    margin-top: 30px;
+}
+.contact-form-name-title{
+    width:25%;
+}
+.contact-form-address{
+    display:flex;
+    margin-top: 30px;
+}
+.contact-form-address-title{
+    width:25%;
+}
+.contact-form-subject{
+    display:flex;
+    margin-top: 30px;
+}
+.contact-form-subject-title{
+    width:25%;
+}
+.contact-form-detail{
+    display:flex;
+    margin-top: 30px;
+}
+.contact-form-detail-title{
+    width:25%;
+}
+.form-input{
+    width:75%;
+    height: 50px;
+}
+.form-input-big{
+    width:75%;
+    height: 160px;
+}
+.input-text{
+    width: 100%;
+    height:100%;
+}
+.selectbox{
+    width: 100%;
+    height:100%;
+}
+.select{
+    width: 100%;
+    height:100%;
+}
+.policy{
+    margin-top: 30px;
+    text-align: center;
+}
+.submit{
+    text-align: center;
+}
+.submit-btn{
+    text-align: center;
+    width:320px;
+    height:70px;
+    color:#fff;
+    background-color: #444;
+}
+.submit-btn:hover{
+    color:#000;
+    background-color:#fff;
+}
+.footer{
+    margin-top: 170px;
+    margin-bottom: 170px;
+    text-align: center;
+}
+.footer-img img{
+    width:150px;
+    text-align: center;
+}
+@media screen and (max-width:768px){
+    .contact{
+        margin-left:35px;
+        margin-right:35px;
+    }
+    .contact-form-name{
+        display:block;
+    }
+    .contact-form-name-title{
+        width:25%;
+    }
+    .form-input{
+        width:100%;
+    }
+    .form-input-big{
+        width:100%;
+    }
+    .contact-form-address{
+        display:block;
+    }
+    .contact-form-subject{
+        display:block;
+    }
+    .contact-form-detail{
+        display:block;
+    }
+    .submit-btn{
+        width:480px;
+        height:48px;
+    }
+    .footer{
+        margin-top: 63px;
+        margin-bottom: 115px;
+    }
+}
 /* リセットcss */
 abbr,
 address,
